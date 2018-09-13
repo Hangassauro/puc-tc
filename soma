@@ -1,3 +1,8 @@
+;DESENVOLVIDO PELOS ALUNOS:
+;   Elisa Otto
+;   Gustavo Bispo
+;   Henrique Hangai
+
 section        .data    ;inicializando variaveis
 
 msg db 20
