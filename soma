@@ -1,4 +1,5 @@
-section .data
+section        .data    ;inicializando variaveis
+
 msg db 20
 var1 dw 0 
 var2 dw 0 
@@ -6,10 +7,10 @@ firstDig dw 0
 secondDig dw 0
 result dw 0
 
+
 section .text
 global main
 main:
-
     mov     ebp, esp; fot correct debugging
     mov     edx, 2; tamanho da area de memória
     mov     ecx, var1; carrega o endereço de memoria                                                                        
@@ -22,8 +23,7 @@ main:
     mov     [var1], eax
     
     
-    
-    
+        
     mov     ebp, esp; fot correct debugging
     mov     edx, 2; tamanho da area de memória
     mov     ecx, var2; carrega o endereço de memoria                                                                        
@@ -35,8 +35,7 @@ main:
     sub     eax, 30h
     mov     [var2], eax
     
-    
-    
+        
     
     mov     eax, [var1]
     mov     ebx, [var2]
@@ -44,7 +43,6 @@ main:
     add     eax, 30h
     mov     [result], eax
     
- 
     mov     edx, 2;
     mov     ecx, result
     mov     ebx,1
@@ -53,14 +51,4 @@ main:
     
     mov     eax,1
     int     0x80
-    ret
-    
-
-
-    ;mov     eax,[result];92
-    ;mov     ebx, 10
-    ;div     ebx
-    ;mov    [firstDig], eax ; firstDIg = 9
-        
-
-    
+    ret   
